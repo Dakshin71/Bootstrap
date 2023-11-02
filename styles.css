@@ -1,0 +1,22 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin: 0;
+}
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    animation: moveright 2s linear infinite;
+}
+@keyframes moveright {
+    from{
+        transform: translate(0);
+    }
+    to{
+        transform: translate(200px);
+    }
+    
+}

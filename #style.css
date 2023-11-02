@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: blue;
+}
+.loader{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transform: perspective(300px) rotate(60deg);
+}
+.loader span{
+    position: absolute;
+    border: 2px solid black;
+    display: block;
+    box-shadow: 0 5px 0 ,inset 0 5px 0;
+    box-sizing: border-box;
+    border-radius: 50%;
+    animation-duration: animate 5s ease-in-out infinite;
+}
+.loader span:nth-child(1){
+    top: 0;
+    left: 0;
+    right: 0;
+    animation-delay: 0s;
+}
+.loader span:nth-child(2){
+    top: 10;
+    left: 10;
+    right: 10;
+    animation-delay: 0s;
+}
+.loader span:nth-child(3){
+    top: 20;
+    left: 20;
+    right: 230;
+    animation-delay: 0s;
+}
+.loader span:nth-child(4){
+    top: 30;
+    left: 30;
+    right: 30;
+    animation-delay: 0s;
+}
+.loader span:nth-child(5){
+    top: 40;
+    left: 40;
+    right: 40;
+    animation-delay: 0s;
+}
+.loader span:nth-child(6){
+    top: 50;
+    left: 50;
+    right: 50;
+    animation-delay: 0s;
+}
